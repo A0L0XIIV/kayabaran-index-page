@@ -1,6 +1,11 @@
 body {
   background-color: #bbbbbb;
   font-size: larger;
+  min-width: 100%;
+}
+
+.dark-body {
+  background-color: #444444;
 }
 
 main {
@@ -10,15 +15,32 @@ main {
   background: rgba(123, 123, 123, 0.8);
 }
 
+.dark-main {
+  color: #ffffff;
+  background: rgba(123, 123, 123, 0.2);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 .navbar {
   background-color: #333333;
-  font-size: 3em;
+  font-size: 2.2rem;
   text-shadow: 0 0 3px #000000;
 }
 
 .content {
   background-color: #dddddd;
   padding: 2%;
+}
+
+.dark-content {
+  background-color: #222222;
 }
 
 footer {
@@ -34,6 +56,12 @@ img {
 
 nav li {
   list-style-type: none;
+}
+
+.crs-size {
+  max-width: 900px;
+  max-height: 600px !important;
+  min-height: 500px !important;
 }
 
 /* Link colors */
@@ -81,11 +109,13 @@ a:hover {
 
 /* Mobile Devices */
 @media only screen and (max-width: 575px) {
-  body {
-    min-width: 100%;
-  }
   main {
     width: 100%;
+  }
+  .crs-size {
+    max-width: 900px;
+    max-height: 400px !important;
+    min-height: 350px !important;
   }
 }
 /* Tablets */
@@ -93,10 +123,16 @@ a:hover {
   main {
     width: 100%;
   }
+  .navbar {
+    font-size: 1.5rem;
+  }
 }
 /* Lower Res Desktop - HD*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   main {
     width: 90%;
+  }
+  .navbar {
+    font-size: 1.5rem;
   }
 }

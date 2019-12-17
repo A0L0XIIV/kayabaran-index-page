@@ -40,15 +40,15 @@
     <main class="row mx-auto">
       <div class="navbar d-none d-md-block col-md-3 text-right">
         <div>
-          <button class="btn btn-dark">Dark</button>
-          <button class="btn btn-light">Light</button>
-          <button class="btn btn-dark">Karanlık</button>
-          <button class="btn btn-light">Aydınlık</button>
+          <button class="btn btn-dark" onclick="activateDarkMode()">Dark</button>
+          <button class="btn btn-light" onclick="deactivateDarkMode()">Light</button>
+          <button class="btn btn-dark" onclick="activateDarkMode()">Karanlık</button>
+          <button class="btn btn-light" onclick="deactivateDarkMode()">Aydınlık</button>
           <button class="btn btn-danger">Türkçe</button>
           <button class="btn btn-primary">English</button>
         </div>
-        <nav class="sticky-top">
-          <ul>
+        <nav class="sticky-top px-4">
+          <ul class="p-0">
             <li>
               <a href="#1" id="nav-item-1">About Me</a>
             </li>
@@ -86,10 +86,7 @@
                 class="carousel slide"
                 data-ride="carousel"
               >
-                <div
-                  class="carousel-inner"
-                  style="max-width:900px; max-height:600px !important; min-height:500px !important;"
-                >
+                <div class="carousel-inner crs-size">
                   <div
                     class="carousel-item active"
                     data-toggle="modal"
@@ -319,10 +316,7 @@
                 class="carousel slide"
                 data-ride="carousel"
               >
-                <div
-                  class="carousel-inner"
-                  style="max-width:900px; max-height:600px !important; min-height:500px !important;"
-                >
+                <div class="carousel-inner crs-size">
                   <div
                     class="carousel-item active"
                     data-toggle="modal"
@@ -550,10 +544,7 @@
                 class="carousel slide"
                 data-ride="carousel"
               >
-                <div
-                  class="carousel-inner"
-                  style="max-width:900px; max-height:850px !important; min-height:500px !important;"
-                >
+                <div class="carousel-inner crs-size">
                   <div
                     class="carousel-item active"
                     data-toggle="modal"
@@ -806,8 +797,9 @@
                 <li>Learning From Data</li>
                 <li>Functional Programming</li>
               </ul>
-              <a href="http://www.cs.itu.edu.tr/en/homepage">Istanbul Technical University - Faculty of Computer and Informatics Engineering</a>
               <a href="http://global.itu.edu.tr">Istanbul Technical University Website</a>
+              <br>
+              <a href="http://www.cs.itu.edu.tr/en/homepage">ITU - Faculty of Computer and Informatics Engineering</a>
             </div>
           </div>
         </div>
@@ -845,10 +837,7 @@
                 class="carousel slide"
                 data-ride="carousel"
               >
-                <div
-                  class="carousel-inner"
-                  style="max-width:900px; max-height:600px !important; min-height:500px !important;"
-                >
+                <div class="carousel-inner crs-size">
                   <div
                     class="carousel-item active"
                     data-toggle="modal"
@@ -992,10 +981,7 @@
                 class="carousel slide"
                 data-ride="carousel"
               >
-                <div
-                  class="carousel-inner"
-                  style="max-width:900px; max-height:600px !important; min-height:500px !important;"
-                >
+                <div class="carousel-inner crs-size">
                   <div
                     class="carousel-item active"
                     data-toggle="modal"
