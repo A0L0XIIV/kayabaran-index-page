@@ -39,6 +39,9 @@ nav li {
 /* Link colors */
 a {
   font-size: 1.2em;
+}
+
+nav a {
   color: #ffffff;
 }
 
