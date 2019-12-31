@@ -4,20 +4,11 @@ body {
   min-width: 100%;
 }
 
-.dark-body {
-  background-color: #444444;
-}
-
 main {
   width: 80%;
   color: #000000;
   text-align: center;
   background: rgba(123, 123, 123, 0.8);
-}
-
-.dark-main {
-  color: #ffffff;
-  background: rgba(123, 123, 123, 0.2);
 }
 
 h1 {
@@ -39,12 +30,14 @@ h3 {
   padding: 2%;
 }
 
-.dark-content {
-  background-color: #222222;
-}
-
 footer {
   width: 80%;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.button-bar {
+  width: 100%;
   background-color: #333333;
   color: #ffffff;
 }
@@ -62,10 +55,6 @@ nav li {
   max-width: 900px;
   max-height: 600px !important;
   min-height: 500px !important;
-}
-
-#tr-link-btn {
-  padding: 0;
 }
 
 /* Link colors */
@@ -116,11 +105,70 @@ a:hover {
   text-decoration: none;
   font-size: 1em;
 }
+
+.language-icon {
+  height: 17px;
+  width: 17px;
+}
+
+/* ----- DARK THEME OPERATIONS  ----- */
+
+.dark-body {
+  background-color: #444444;
+}
+
+.dark-main {
+  color: #ffffff;
+  background: rgba(123, 123, 123, 0.2);
+}
+
+.dark-content {
+  background-color: #222222;
+}
+
+.dark-modal {
+  background-color: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444444;
+    font-size: larger;
+    min-width: 100%;
+  }
+
+  main {
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(123, 123, 123, 0.2);
+  }
+
+  .content {
+    background-color: #222222;
+    padding: 2%;
+  }
+
+  #dark-theme-selection {
+    display: none;
+  }
+
+  .modal-content {
+    background-color: #333333;
+  }
+}
+
 /* ----- SCREEN SIZE BASED OPERATIONS  ----- */
 
 /* Mobile Devices */
+@media only screen and (max-width: 375px) {
+  .language-text {
+    display: none;
+  }
+}
 @media only screen and (max-width: 575px) {
-  main {
+  main,
+  footer {
     width: 100%;
   }
   .crs-size {
@@ -131,7 +179,8 @@ a:hover {
 }
 /* Tablets */
 @media only screen and (min-width: 576px) and (max-width: 991px) {
-  main {
+  main,
+  footer {
     width: 100%;
   }
   .navbar {
@@ -140,7 +189,8 @@ a:hover {
 }
 /* Lower Res Desktop - HD*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  main {
+  main,
+  footer {
     width: 90%;
   }
   .navbar {

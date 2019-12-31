@@ -38,6 +38,34 @@
   </head>
   <body>
     <main class="row mx-auto">
+      <div class="button-bar row mx-auto">
+        <!--Empty div for right alignment-->
+        <div class="col-md-6"></div>
+        <div class="col-sm-12 col-md-6">
+          <!-- Dark theme switch -->
+          <div class="custom-control custom-switch float-right" id="dark-theme-selection">
+            <input type="checkbox" class="custom-control-input" id="customSwitches" onclick="switchDarkTheme()">
+            <label class="custom-control-label" for="customSwitches">Dark Theme</label>
+          </div>
+          <!-- Language buttons -->
+          <button class="btn btn-primary btn-sm p-0 my-1 mx-2 mr-3 float-right">
+            <a href="./index.html" class="btn btn-link py-0 px-1"><span class="language-text">English</span>
+              <img src="icons/united-kingdom.png" alt="EN" class="language-icon">
+              <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+                Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              </div>
+            </a>
+          </button>
+          <button class="btn btn-danger btn-sm p-0 my-1 mx-2 float-right">
+            <a href="./tr-index.html" class="btn btn-link py-0 px-1"><span class="language-text">Türkçe</span>
+              <img src="icons/turkey.png" alt="TR" class="language-icon">
+              <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+                Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              </div>
+            </a>
+          </button>
+        </div>
+      </div>
       <div class="navbar d-none d-md-block col-md-3 text-right">      
         <nav class="sticky-top px-4">
           <ul class="p-0">
@@ -48,7 +76,7 @@
               <a href="#2" id="nav-item-2">Hometown</a>
             </li>
             <li>
-              <a href="#3" id="nav-item-3">Undergradate</a>
+              <a href="#3" id="nav-item-3">Undergraduate</a>
             </li>
             <li>
               <a href="#4" id="nav-item-4">Career</a>
@@ -65,21 +93,9 @@
           </ul>
         </nav>
       </div>
-      <div class="content col-sm-12 col-md-9 text-justify">
+      
+      <div class="content col-sm-12 col-md-9 text-justify pt-0">
         <div>
-          <div class="button-bar" style="float: right;">
-            <!-- <button class="btn btn-dark" onclick="activateDarkMode()">Dark</button>
-            <button class="btn btn-light" onclick="deactivateDarkMode()">Light</button>
-            <button class="btn btn-dark" onclick="activateDarkMode()">Karanlık</button>
-            <button class="btn btn-light" onclick="deactivateDarkMode()">Aydınlık</button> -->
-            <!-- <button class="btn btn-danger p-0"><a href="#4" class="btn btn-link">Türkçe</a></button> -->
-            <!-- Default switch -->
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitches" onclick="switchDarkTheme()">
-              <label class="custom-control-label" for="customSwitches">Dark Theme</label>
-            </div>
-            <button class="btn btn-primary p-0"><a href="#4" class="btn btn-link">English</a></button>
-          </div>
           <h1 class="text-center">Welcome to my website!</h1>
         </div>
 
@@ -664,7 +680,7 @@
                 <div class="modal-dialog modal-xl">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <div class="bkName">My Images</div>
+                      <div class="bkName">My Undergraduate Images</div>
                       <button
                         type="button"
                         class="close"
@@ -827,7 +843,7 @@
                 additions. The system was a web project that uses Java applet in
                 browser. The serverside was written in C but we mostly worked on
                 client which is Java and JavaScript. Later, we started to work
-                on secondary project. it was internal website project for
+                on secondary project. It was internal website project for
                 individual goals. We designed the system form zero and we used
                 Angular in the frontend, Java Spring in the backend and
                 PostgreSQL as a database. I mostly worked on database design and
