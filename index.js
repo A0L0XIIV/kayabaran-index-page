@@ -44,3 +44,36 @@ function deactivateDarkMode() {
     .getElementsByClassName("content")[0]
     .classList.remove("dark-content");
 }
+
+function switchDarkTheme() {
+  /* Swicht body theme*/
+  if (
+    document.getElementsByTagName("body")[0].className.includes("dark-body")
+  ) {
+    document.getElementsByTagName("body")[0].classList.remove("dark-body");
+  } else {
+    document.getElementsByTagName("body")[0].classList.add("dark-body");
+  }
+
+  /* Swicht main div theme*/
+  if (
+    document.getElementsByTagName("main")[0].className.includes("dark-main")
+  ) {
+    document.getElementsByTagName("main")[0].classList.remove("dark-main");
+  } else {
+    document.getElementsByTagName("main")[0].classList.add("dark-main");
+  }
+
+  /* Swicht content div theme*/
+  if (
+    document
+      .getElementsByClassName("content")[0]
+      .className.includes("dark-content")
+  ) {
+    document
+      .getElementsByClassName("content")[0]
+      .classList.remove("dark-content");
+  } else {
+    document.getElementsByClassName("content")[0].classList.add("dark-content");
+  }
+}

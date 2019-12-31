@@ -38,15 +38,7 @@
   </head>
   <body>
     <main class="row mx-auto">
-      <div class="navbar d-none d-md-block col-md-3 text-right">
-        <div>
-          <button class="btn btn-dark" onclick="activateDarkMode()">Dark</button>
-          <button class="btn btn-light" onclick="deactivateDarkMode()">Light</button>
-          <button class="btn btn-dark" onclick="activateDarkMode()">Karanlık</button>
-          <button class="btn btn-light" onclick="deactivateDarkMode()">Aydınlık</button>
-          <button class="btn btn-danger"><a href="#4" class="btn-link">Türkçe</a></button>
-          <button class="btn btn-primary"><a href="#4" class="btn-link">English</a></button>
-        </div>
+      <div class="navbar d-none d-md-block col-md-3 text-right">      
         <nav class="sticky-top px-4">
           <ul class="p-0">
             <li>
@@ -74,7 +66,22 @@
         </nav>
       </div>
       <div class="content col-sm-12 col-md-9 text-justify">
-        <h1 class="text-center">Welcome to my website!</h1>
+        <div>
+          <div class="button-bar" style="float: right;">
+            <!-- <button class="btn btn-dark" onclick="activateDarkMode()">Dark</button>
+            <button class="btn btn-light" onclick="deactivateDarkMode()">Light</button>
+            <button class="btn btn-dark" onclick="activateDarkMode()">Karanlık</button>
+            <button class="btn btn-light" onclick="deactivateDarkMode()">Aydınlık</button> -->
+            <!-- <button class="btn btn-danger p-0"><a href="#4" class="btn btn-link">Türkçe</a></button> -->
+            <!-- Default switch -->
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitches" onclick="switchDarkTheme()">
+              <label class="custom-control-label" for="customSwitches">Dark Theme</label>
+            </div>
+            <button class="btn btn-primary p-0"><a href="#4" class="btn btn-link">English</a></button>
+          </div>
+          <h1 class="text-center">Welcome to my website!</h1>
+        </div>
 
         <div id="1">
           <h3>Who am I?</h3>
