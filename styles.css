@@ -182,7 +182,7 @@ footer > ul > li > a {
 .nav-item > a:focus {
   text-decoration: none;
   background-color: #f80;
-  transition: 0.25s;
+  transition: transform 0.25s;
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em #000;
 }
